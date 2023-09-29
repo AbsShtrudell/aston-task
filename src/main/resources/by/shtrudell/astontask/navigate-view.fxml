@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="by.shtrudell.astontask.fxml.NavigateWindowController">
+  <tabs>
+    <Tab text="Task 1">
+         <content>
+            <AnchorPane fx:id="taskOnePane" prefHeight="200.0" prefWidth="200.0" />
+         </content>
+    </Tab>
+    <Tab text="Task 2">
+      <content>
+        <AnchorPane fx:id="taskTwoPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+      <Tab text="Task 3">
+         <content>
+            <AnchorPane fx:id="taskThreePane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+         </content>
+      </Tab>
+      <Tab text="Task 4">
+         <content>
+            <AnchorPane fx:id="taskFourPane" minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="512.0" />
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
