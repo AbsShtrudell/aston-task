@@ -4,6 +4,10 @@
 
 Последовательность неверна. Исправленный вариант: [[((())()(()))]]
 
+## Сборка и запуск
+
+Надо собрать artifact "aston-task" и запускать через "launch.bat"
+
 ## Обзор приложения
 
 <img src="https://github.com/AbsShtrudell/aston-task/assets/70441070/b316da9e-4137-4bdc-ad31-56d0f2024349" width="500" height="380">
