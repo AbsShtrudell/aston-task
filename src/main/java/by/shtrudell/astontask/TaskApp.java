@@ -1,18 +1,19 @@
 package by.shtrudell.astontask;
 
+import by.shtrudell.astontask.fxml.FXMLHelper;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class TaskApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Parent navigate = FXMLHelper.loadFXML("navigate-view");
+        Scene scene = new Scene(navigate);
+        stage.setTitle("Aston Task");
         stage.setScene(scene);
         stage.show();
     }

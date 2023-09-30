@@ -3,6 +3,8 @@ package by.shtrudell.astontask.fxml;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 
+import java.io.IOException;
+
 public class NavigateWindowController {
     @FXML
     private AnchorPane taskOnePane;
@@ -15,6 +17,13 @@ public class NavigateWindowController {
 
     @FXML
     private void initialize() {
-
+        try {
+            taskOnePane.getChildren().add(FXMLHelper.loadFXML("task1"));
+            taskTwoPane.getChildren().add(FXMLHelper.loadFXML("task2"));
+            taskThreePane.getChildren().add(FXMLHelper.loadFXML("task3"));
+            taskFourPane.getChildren().add(FXMLHelper.loadFXML("task4"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
