@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jpackage" name="aston-task">
+    <output-path>$PROJECT_DIR$/out/artifacts/aston_task</output-path>
+    <root id="root">
+      <element id="directory" name="bin">
+        <element id="artifact" artifact-name="aston-task:jar" />
+        <element id="dir-copy" path="$PROJECT_DIR$/lib/javafx/bin" />
+      </element>
+      <element id="file-copy" path="$PROJECT_DIR$/boot/launch.bat" />
+      <element id="directory" name="lib">
+        <element id="dir-copy" path="$PROJECT_DIR$/lib/javafx/lib" />
+      </element>
+    </root>
+  </artifact>
+</component>
