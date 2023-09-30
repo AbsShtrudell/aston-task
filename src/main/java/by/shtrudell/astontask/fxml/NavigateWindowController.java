@@ -1,5 +1,6 @@
 package by.shtrudell.astontask.fxml;
 
+import by.shtrudell.astontask.Util.FXMLHelper;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
 

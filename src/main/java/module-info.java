@@ -7,4 +7,6 @@ module by.shtrudell.astontask {
     exports by.shtrudell.astontask;
     exports by.shtrudell.astontask.fxml;
     opens by.shtrudell.astontask.fxml to javafx.fxml;
+    exports by.shtrudell.astontask.Util;
+    opens by.shtrudell.astontask.Util to javafx.fxml;
 }

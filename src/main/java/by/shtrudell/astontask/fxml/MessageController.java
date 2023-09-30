@@ -5,7 +5,7 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.text.Text;
 
-public class Message {
+public class MessageController {
     @FXML
     private Text messageText;
 

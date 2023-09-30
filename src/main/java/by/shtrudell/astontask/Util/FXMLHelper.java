@@ -1,4 +1,4 @@
-package by.shtrudell.astontask.fxml;
+package by.shtrudell.astontask.Util;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

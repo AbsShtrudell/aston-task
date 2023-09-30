@@ -1,17 +1,14 @@
 package by.shtrudell.astontask.fxml;
 
-import by.shtrudell.astontask.AlertBox;
+import by.shtrudell.astontask.Util.AlertBox;
 import by.shtrudell.astontask.algorithm.NumChecker;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
 public class TaskOneController {
     @FXML
     private TextArea textArea;
-    @FXML
-    private Button okButton;
 
     @FXML
     private void applyAction(ActionEvent actionEvent) {
@@ -22,7 +19,7 @@ public class TaskOneController {
 
         try{
             int number = Integer.parseInt(textArea.getText());
-            if(NumChecker.IsGreater(number, 7))
+            if(NumChecker.isGreater(number, NumChecker.greaterThanNum))
                 AlertBox.display("Answer", "Привет!");
             else
                 AlertBox.display("Answer", "Число не больше 7");

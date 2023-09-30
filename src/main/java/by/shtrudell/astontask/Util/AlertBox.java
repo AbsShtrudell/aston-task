@@ -1,11 +1,12 @@
-package by.shtrudell.astontask;
+package by.shtrudell.astontask.Util;
 
+import by.shtrudell.astontask.TaskApp;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import by.shtrudell.astontask.fxml.Message;
+import by.shtrudell.astontask.fxml.MessageController;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -24,12 +25,12 @@ public class AlertBox {
             scene = new Scene(fxmlLoader.load());
 
             try {
-                window.getIcons().add(new Image(Objects.requireNonNull(TaskApp.class.getResourceAsStream("/org/shtrudell/client/icon_warning.png"))));
+                window.getIcons().add(new Image(Objects.requireNonNull(TaskApp.class.getResourceAsStream("/by/shtrudell/astontask/icon_warning.png"))));
             }
             catch (Exception ignored) {
             }
 
-        Message controller = fxmlLoader.getController();
+        MessageController controller = fxmlLoader.getController();
         controller.setMessage(message);
         controller.setCloseEvent(e -> window.close());
         window.setScene(scene);

@@ -1,6 +1,6 @@
 package by.shtrudell.astontask;
 
-import by.shtrudell.astontask.fxml.FXMLHelper;
+import by.shtrudell.astontask.Util.FXMLHelper;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

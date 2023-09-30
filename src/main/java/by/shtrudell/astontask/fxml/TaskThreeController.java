@@ -1,10 +1,9 @@
 package by.shtrudell.astontask.fxml;
 
-import by.shtrudell.astontask.AlertBox;
+import by.shtrudell.astontask.Util.AlertBox;
 import by.shtrudell.astontask.algorithm.NumChecker;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 
 import java.util.ArrayList;
@@ -14,8 +13,6 @@ import java.util.List;
 public class TaskThreeController {
     @FXML
     private TextArea textArea;
-    @FXML
-    private Button okButton;
 
     @FXML
     private void applyAction(ActionEvent actionEvent) {
@@ -28,10 +25,9 @@ public class TaskThreeController {
 
             List<Integer> multOfTree = new ArrayList<>();
 
-            for (int i= 0; i < numArr.length; i++) {
-                if(NumChecker.MultipleOf(3, numArr[i] ))
+            for (int i= 0; i < numArr.length; i++)
+                if(NumChecker.multipleOf(NumChecker.multipleOfNum, numArr[i]))
                     multOfTree.add(numArr[i]);
-            }
 
             AlertBox.display("Answer", Arrays.toString(multOfTree.toArray()));
         }
